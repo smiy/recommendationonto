@@ -5,14 +5,14 @@
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix rec:     <http://purl.org/ontology/rec/core#> .
-@prefix mo:		<http://purl.org/ontology/mo/> .
 @prefix ex:		<http://example.org/> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix event:   <http://purl.org/NET/c4dm/event.owl#> .
-@prefix time:	<http://www.w3.org/2006/time#> .
-@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix olo:     <http://purl.org/ontology/olo/core#> .
 @prefix isi:	<http://purl.org/ontology/is/inst/> .
+@prefix ao:      <http://purl.org/ontology/ao/core#> .
+@prefix sim:     <http://purl.org/ontology/similarity/> .
+@prefix is:      <http://purl.org/ontology/is/core#> .
 
 <http://smiy.sourceforge.net/rec/examples/N3/music_rec_-_example.n3>
       rdf:type bibo:Document ;
@@ -22,12 +22,132 @@
       rdfs:seeAlso <http://purl.org/ontology/rec/recommendationontology.html> ;
       dc:title "Music Recommendation Example"@en .
       
-ex:AMusicRecommendation a rec:Recommendation :
+<http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> 
+	rec:recommendation ex:AMusicRecommendation .      
+      
+ex:AMusicRecommendation a rec:RankedRecommendation ;
 	rec:recommender isi:lastfm ;
-	rec:recommendation_object 
-	 
-ex:SexMachine a mo:Track ;
-	dc:title "Sex Machine"^^xsd:string ;
-	dc:creator <http://dbpedia.org/resource/James_Brown> .
+	rec:ranked_recommendation_object [
+		a olo:Slot ;
+		olo:item <http://dbtune.org/musicbrainz/resource/track/097c362d-72b7-4a53-96e2-d9ff02f8be1f> ;
+		olo:index 1
+		] ;
+	rec:ranked_recommendation_object [
+		a olo:Slot ;
+		olo:item <http://dbtune.org/musicbrainz/resource/track/161d35d9-3e31-41e9-8392-cf5d2c03b31d> ;
+		olo:index 2
+		] ;
+	rec:ranked_recommendation_object [
+		a olo:Slot ;
+		olo:item <http://dbtune.org/musicbrainz/resource/track/093c1742-ebda-45cd-a50c-734e5d92e7f2> ;
+		olo:index 3
+		] ;
+	rec:ranked_recommendation_object [
+		a olo:Slot ;
+		olo:item <http://dbtune.org/musicbrainz/resource/track/0a208327-525a-429b-8e79-51669bfb81f7> ;
+		olo:index 4
+		] ;
+	rec:ranked_recommendation_object [
+		a olo:Slot ;
+		olo:item <http://dbtune.org/musicbrainz/resource/track/0161855d-0b98-4f2d-b2ab-446dbd8d6759> ;
+		olo:index 5
+		] ;
+	rec:ranked_recommendation_object [
+		a olo:Slot ;
+		olo:item <http://dbtune.org/musicbrainz/resource/track/014f2510-e653-43e9-862a-880ac6388bb1> ;
+		olo:index 6
+		] ;
+	rec:ranked_recommendation_object [
+		a olo:Slot ;
+		olo:item <http://dbtune.org/musicbrainz/resource/track/0ab210b0-18c6-4c52-aee7-78f6012b9192> ;
+		olo:index 7
+		] ;
+	rec:ranked_recommendation_object [
+		a olo:Slot ;
+		olo:item <http://dbtune.org/musicbrainz/resource/track/027326ef-1455-48c9-8543-ac908eb71925> ;
+		olo:index 8
+		] ;
+	rec:ranked_recommendation_object [
+		a olo:Slot ;
+		olo:item <http://dbtune.org/musicbrainz/resource/track/04dc3d0b-dff4-41a0-8bf3-12b4b34460a6> ;
+		olo:index 9
+		] ;
+	rec:ranked_recommendation_object [
+		a olo:Slot ;
+		olo:item <http://dbtune.org/musicbrainz/resource/track/0348eea1-8178-4dc1-8a37-d09b5897ace2> ;
+		olo:index 10
+		] ;
+	ao:included_association ex:SimAssociation01 ;
+	ao:included_association ex:SimAssociation02 ;
+	ao:included_association ex:SimAssociation03 ;
+	ao:included_association ex:SimAssociation04 ;
+	ao:included_association ex:SimAssociation05 ;
+	ao:included_association ex:SimAssociation06 ;
+	ao:included_association ex:SimAssociation07 ;
+	ao:included_association ex:SimAssociation08 ;
+	ao:included_association ex:SimAssociation09 ;
+	ao:included_association ex:SimAssociation10 .
 	
-ex:SexMachineTL a tl:TimeLine .
+ex:lfmTrackSimilarity a sim:AssociationMethod ;
+	is:info_service isi:lastfm .	
+	
+ex:Association01 a sim:Similarity ;
+	  sim:subject <http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> ;
+	  sim:object <http://dbtune.org/musicbrainz/resource/track/097c362d-72b7-4a53-96e2-d9ff02f8be1f> ;
+	  sim:weight 1.0 ;
+	  sim:method ex:lfmTrackSimilarity .
+	  
+ex:Association02 a sim:Similarity ;
+	  sim:subject <http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> ;
+	  sim:object <http://dbtune.org/musicbrainz/resource/track/161d35d9-3e31-41e9-8392-cf5d2c03b31d> ;
+	  sim:weight 0.968842 ;
+	  sim:method ex:lfmTrackSimilarity .
+
+ex:Association03 a sim:Similarity ;
+	  sim:subject <http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> ;
+	  sim:object <http://dbtune.org/musicbrainz/resource/track/093c1742-ebda-45cd-a50c-734e5d92e7f2> ;
+	  sim:weight 0.547951 ;
+	  sim:method ex:lfmTrackSimilarity .
+	  
+ex:Association04 a sim:Similarity ;
+	  sim:subject <http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> ;
+	  sim:object <http://dbtune.org/musicbrainz/resource/track/0a208327-525a-429b-8e79-51669bfb81f7> ;
+	  sim:weight 0.449539 ;
+	  sim:method ex:lfmTrackSimilarity .
+	  
+ex:Association05 a sim:Similarity ;
+	  sim:subject <http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> ;
+	  sim:object <http://dbtune.org/musicbrainz/resource/track/0161855d-0b98-4f2d-b2ab-446dbd8d6759> ;
+	  sim:weight 0.401746 ;
+	  sim:method ex:lfmTrackSimilarity .
+	  
+ex:Association06 a sim:Similarity ;
+	  sim:subject <http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> ;
+	  sim:object <http://dbtune.org/musicbrainz/resource/track/014f2510-e653-43e9-862a-880ac6388bb1> ;
+	  sim:weight 0.36673 ;
+	  sim:method ex:lfmTrackSimilarity .
+	  
+ex:Association07 a sim:Similarity ;
+	  sim:subject <http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> ;
+	  sim:object <http://dbtune.org/musicbrainz/resource/track/0ab210b0-18c6-4c52-aee7-78f6012b9192> ;
+	  sim:weight 0.36142 ;
+	  sim:method ex:lfmTrackSimilarity .
+	  
+ex:Association08 a sim:Similarity ;
+	  sim:subject <http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> ;
+	  sim:object <http://dbtune.org/musicbrainz/resource/track/027326ef-1455-48c9-8543-ac908eb71925> ;
+	  sim:weight 0.351277 ;
+	  sim:method ex:lfmTrackSimilarity .
+	  
+ex:Association09 a sim:Similarity ;
+	  sim:subject <http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> ;
+	  sim:object <http://dbtune.org/musicbrainz/resource/track/04dc3d0b-dff4-41a0-8bf3-12b4b34460a6> ;
+	  sim:weight 0.350151 ;
+	  sim:method ex:lfmTrackSimilarity .
+	  
+ex:Association10 a sim:Similarity ;
+	  sim:subject <http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> ;
+	  sim:object <http://dbtune.org/musicbrainz/resource/track/0348eea1-8178-4dc1-8a37-d09b5897ace2> ;
+	  sim:weight 0.336997 ;
+	  sim:method ex:lfmTrackSimilarity .	   
+		

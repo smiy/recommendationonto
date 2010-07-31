@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ao="http://purl.org/ontology/ao/core#"
+   xmlns:bibo="http://purl.org/ontology/bibo/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:ex="http://example.org/"
+   xmlns:is="http://purl.org/ontology/is/core#"
+   xmlns:isi="http://purl.org/ontology/is/inst/"
+   xmlns:olo="http://purl.org/ontology/olo/core#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:rec="http://purl.org/ontology/rec/core#"
+   xmlns:sim="http://purl.org/ontology/similarity/"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xml:base=""http://example.org/">
+  <rdf:Description rdf:about="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3">
+    <rec:recommendation rdf:resource="http://example.org/AMusicRecommendation"/>
+  </rdf:Description>
+  <rec:RankedRecommendation rdf:about="http://example.org/AMusicRecommendation">
+    <ao:included_association rdf:resource="http://example.org/SimAssociation01"/>
+    <ao:included_association rdf:resource="http://example.org/SimAssociation02"/>
+    <ao:included_association rdf:resource="http://example.org/SimAssociation03"/>
+    <ao:included_association rdf:resource="http://example.org/SimAssociation04"/>
+    <ao:included_association rdf:resource="http://example.org/SimAssociation05"/>
+    <ao:included_association rdf:resource="http://example.org/SimAssociation06"/>
+    <ao:included_association rdf:resource="http://example.org/SimAssociation07"/>
+    <ao:included_association rdf:resource="http://example.org/SimAssociation08"/>
+    <ao:included_association rdf:resource="http://example.org/SimAssociation09"/>
+    <ao:included_association rdf:resource="http://example.org/SimAssociation10"/>
+    <rec:ranked_recommendation_object>
+      <olo:Slot>
+        <olo:index rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</olo:index>
+        <olo:item rdf:resource="http://dbtune.org/musicbrainz/resource/track/097c362d-72b7-4a53-96e2-d9ff02f8be1f"/>
+      </olo:Slot>
+    </rec:ranked_recommendation_object>
+    <rec:ranked_recommendation_object>
+      <olo:Slot>
+        <olo:index rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</olo:index>
+        <olo:item rdf:resource="http://dbtune.org/musicbrainz/resource/track/0348eea1-8178-4dc1-8a37-d09b5897ace2"/>
+      </olo:Slot>
+    </rec:ranked_recommendation_object>
+    <rec:ranked_recommendation_object>
+      <olo:Slot>
+        <olo:index rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</olo:index>
+        <olo:item rdf:resource="http://dbtune.org/musicbrainz/resource/track/161d35d9-3e31-41e9-8392-cf5d2c03b31d"/>
+      </olo:Slot>
+    </rec:ranked_recommendation_object>
+    <rec:ranked_recommendation_object>
+      <olo:Slot>
+        <olo:index rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</olo:index>
+        <olo:item rdf:resource="http://dbtune.org/musicbrainz/resource/track/093c1742-ebda-45cd-a50c-734e5d92e7f2"/>
+      </olo:Slot>
+    </rec:ranked_recommendation_object>
+    <rec:ranked_recommendation_object>
+      <olo:Slot>
+        <olo:index rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</olo:index>
+        <olo:item rdf:resource="http://dbtune.org/musicbrainz/resource/track/0a208327-525a-429b-8e79-51669bfb81f7"/>
+      </olo:Slot>
+    </rec:ranked_recommendation_object>
+    <rec:ranked_recommendation_object>
+      <olo:Slot>
+        <olo:index rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</olo:index>
+        <olo:item rdf:resource="http://dbtune.org/musicbrainz/resource/track/0161855d-0b98-4f2d-b2ab-446dbd8d6759"/>
+      </olo:Slot>
+    </rec:ranked_recommendation_object>
+    <rec:ranked_recommendation_object>
+      <olo:Slot>
+        <olo:index rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</olo:index>
+        <olo:item rdf:resource="http://dbtune.org/musicbrainz/resource/track/014f2510-e653-43e9-862a-880ac6388bb1"/>
+      </olo:Slot>
+    </rec:ranked_recommendation_object>
+    <rec:ranked_recommendation_object>
+      <olo:Slot>
+        <olo:index rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</olo:index>
+        <olo:item rdf:resource="http://dbtune.org/musicbrainz/resource/track/0ab210b0-18c6-4c52-aee7-78f6012b9192"/>
+      </olo:Slot>
+    </rec:ranked_recommendation_object>
+    <rec:ranked_recommendation_object>
+      <olo:Slot>
+        <olo:index rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</olo:index>
+        <olo:item rdf:resource="http://dbtune.org/musicbrainz/resource/track/027326ef-1455-48c9-8543-ac908eb71925"/>
+      </olo:Slot>
+    </rec:ranked_recommendation_object>
+    <rec:ranked_recommendation_object>
+      <olo:Slot>
+        <olo:index rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</olo:index>
+        <olo:item rdf:resource="http://dbtune.org/musicbrainz/resource/track/04dc3d0b-dff4-41a0-8bf3-12b4b34460a6"/>
+      </olo:Slot>
+    </rec:ranked_recommendation_object>
+    <rec:recommender rdf:resource="http://purl.org/ontology/is/inst/lastfm"/>
+  </rec:RankedRecommendation>
+  <sim:Similarity rdf:about="http://example.org/Association01">
+    <sim:method rdf:resource="http://example.org/lfmTrackSimilarity"/>
+    <sim:object rdf:resource="http://dbtune.org/musicbrainz/resource/track/097c362d-72b7-4a53-96e2-d9ff02f8be1f"/>
+    <sim:subject rdf:resource="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3"/>
+    <sim:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</sim:weight>
+  </sim:Similarity>
+  <sim:Similarity rdf:about="http://example.org/Association02">
+    <sim:method rdf:resource="http://example.org/lfmTrackSimilarity"/>
+    <sim:object rdf:resource="http://dbtune.org/musicbrainz/resource/track/161d35d9-3e31-41e9-8392-cf5d2c03b31d"/>
+    <sim:subject rdf:resource="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3"/>
+    <sim:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.968842</sim:weight>
+  </sim:Similarity>
+  <sim:Similarity rdf:about="http://example.org/Association03">
+    <sim:method rdf:resource="http://example.org/lfmTrackSimilarity"/>
+    <sim:object rdf:resource="http://dbtune.org/musicbrainz/resource/track/093c1742-ebda-45cd-a50c-734e5d92e7f2"/>
+    <sim:subject rdf:resource="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3"/>
+    <sim:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.547951</sim:weight>
+  </sim:Similarity>
+  <sim:Similarity rdf:about="http://example.org/Association04">
+    <sim:method rdf:resource="http://example.org/lfmTrackSimilarity"/>
+    <sim:object rdf:resource="http://dbtune.org/musicbrainz/resource/track/0a208327-525a-429b-8e79-51669bfb81f7"/>
+    <sim:subject rdf:resource="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3"/>
+    <sim:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.449539</sim:weight>
+  </sim:Similarity>
+  <sim:Similarity rdf:about="http://example.org/Association05">
+    <sim:method rdf:resource="http://example.org/lfmTrackSimilarity"/>
+    <sim:object rdf:resource="http://dbtune.org/musicbrainz/resource/track/0161855d-0b98-4f2d-b2ab-446dbd8d6759"/>
+    <sim:subject rdf:resource="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3"/>
+    <sim:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.401746</sim:weight>
+  </sim:Similarity>
+  <sim:Similarity rdf:about="http://example.org/Association06">
+    <sim:method rdf:resource="http://example.org/lfmTrackSimilarity"/>
+    <sim:object rdf:resource="http://dbtune.org/musicbrainz/resource/track/014f2510-e653-43e9-862a-880ac6388bb1"/>
+    <sim:subject rdf:resource="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3"/>
+    <sim:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.36673</sim:weight>
+  </sim:Similarity>
+  <sim:Similarity rdf:about="http://example.org/Association07">
+    <sim:method rdf:resource="http://example.org/lfmTrackSimilarity"/>
+    <sim:object rdf:resource="http://dbtune.org/musicbrainz/resource/track/0ab210b0-18c6-4c52-aee7-78f6012b9192"/>
+    <sim:subject rdf:resource="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3"/>
+    <sim:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.36142</sim:weight>
+  </sim:Similarity>
+  <sim:Similarity rdf:about="http://example.org/Association08">
+    <sim:method rdf:resource="http://example.org/lfmTrackSimilarity"/>
+    <sim:object rdf:resource="http://dbtune.org/musicbrainz/resource/track/027326ef-1455-48c9-8543-ac908eb71925"/>
+    <sim:subject rdf:resource="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3"/>
+    <sim:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.351277</sim:weight>
+  </sim:Similarity>
+  <sim:Similarity rdf:about="http://example.org/Association09">
+    <sim:method rdf:resource="http://example.org/lfmTrackSimilarity"/>
+    <sim:object rdf:resource="http://dbtune.org/musicbrainz/resource/track/04dc3d0b-dff4-41a0-8bf3-12b4b34460a6"/>
+    <sim:subject rdf:resource="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3"/>
+    <sim:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.350151</sim:weight>
+  </sim:Similarity>
+  <sim:Similarity rdf:about="http://example.org/Association10">
+    <sim:method rdf:resource="http://example.org/lfmTrackSimilarity"/>
+    <sim:object rdf:resource="http://dbtune.org/musicbrainz/resource/track/0348eea1-8178-4dc1-8a37-d09b5897ace2"/>
+    <sim:subject rdf:resource="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3"/>
+    <sim:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.336997</sim:weight>
+  </sim:Similarity>
+  <sim:AssociationMethod rdf:about="http://example.org/lfmTrackSimilarity">
+    <is:info_service rdf:resource="http://purl.org/ontology/is/inst/lastfm"/>
+  </sim:AssociationMethod>
+  <bibo:Document rdf:about="http://smiy.sourceforge.net/rec/examples/RDF/music_rec_-_example.rdf">
+    <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-07-30T17:58:52+01:00</dc:date>
+    <dc:description xml:lang="en">This document includes an music recommendation example based on the Recommendation Ontology.</dc:description>
+    <dc:title xml:lang="en">Music Recommendation Example</dc:title>
+    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/rec/recommendationontology.html"/>
+  </bibo:Document>
+</rdf:RDF>
