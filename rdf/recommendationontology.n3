@@ -1,6 +1,7 @@
-# Saved by TopBraid on Fri Jul 30 17:07:17 CEST 2010
+# Saved by TopBraid on Sat Jul 31 12:52:07 CEST 2010
 # baseURI: http://purl.org/ontology/rec/core#
 # imports: http://purl.org/ontology/ao/core
+# imports: http://purl.org/ontology/olo/core#
 # imports: http://purl.org/dc/elements/1.1/
 # imports: http://purl.org/ontology/similarity/
 # imports: http://www.w3.org/2003/06/sw-vocab-status/ns
@@ -11,6 +12,7 @@
 @prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix olo:     <http://purl.org/ontology/olo/core#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
@@ -21,23 +23,39 @@
 
 rec:  rdf:type owl:Ontology ;
       dc:creator <http://foaf.me/zazi#me> ;
-      dc:date "2010-07-30T11:25:52+01:00"^^xsd:dateTime ;
+      dc:date "2010-07-31T11:52:52+01:00"^^xsd:dateTime ;
       dc:description """The Recommendation Ontology specification provides basic concepts and properties 
 for describing recommendations on/ for the Semantic Web. This document contains a RDF description of the Recommendation Ontology."""@en ;
       dc:title "The Recommendation Ontology"@en ;
-      owl:imports <http://purl.org/ontology/ao/core> , dc: , dcterms: , sim: , foaf: , <http://www.w3.org/2003/06/sw-vocab-status/ns> ;
-      owl:versionInfo 0.1 .
+      owl:imports <http://purl.org/ontology/ao/core> , dc: , dcterms: , olo: , sim: , foaf: , <http://www.w3.org/2003/06/sw-vocab-status/ns> ;
+      owl:versionInfo 0.2 .
+
+rec:RankedRecommendation
+      rdf:type owl:Class ;
+      rdfs:comment "A ranked recommendation that includes an ordered list of recommendations."@en ;
+      rdfs:isDefinedBy rec: ;
+      rdfs:label "Ranked Recommendation"@en ;
+      rdfs:subClassOf olo:OrderedList , rec:Recommendation ;
+      vs:term_status "testing"@en .
 
 rec:Recommendation
-      rdf:type owl:Class , rdfs:Class ;
+      rdf:type rdfs:Class , owl:Class ;
       rdfs:comment "A recommendation of something for someone or a specific audience by a recommender."@en ;
       rdfs:isDefinedBy rec: ;
       rdfs:label "Recommendation"@en ;
       rdfs:subClassOf ao:LikeableAssociation ;
       vs:term_status "unstable"@en .
 
+rec:ranked_recommendation_object
+      rdf:type owl:ObjectProperty ;
+      rdfs:comment "A ranked recommendation object in a ranked recommendation"@en ;
+      rdfs:isDefinedBy rec: ;
+      rdfs:label "ranked recommendation object"@en ;
+      rdfs:subPropertyOf olo:slot , rec:recommendation_object ;
+      vs:term_status "testing"@en .
+
 rec:recommendation
-      rdf:type owl:ObjectProperty , rdf:Property ;
+      rdf:type rdf:Property , owl:ObjectProperty ;
       rdfs:comment "A recommendation for someone or something."@en ;
       rdfs:domain owl:Thing ;
       rdfs:isDefinedBy rec: ;
@@ -59,7 +77,7 @@ rec:recommendation_audience
       vs:term_status "unstable"@en .
 
 rec:recommendation_object
-      rdf:type owl:ObjectProperty , rdf:Property ;
+      rdf:type rdf:Property , owl:ObjectProperty ;
       rdfs:comment "A recommendation object that is part of a specific recommendation."@en ;
       rdfs:domain rec:Recommendation ;
       rdfs:isDefinedBy rec: ;
@@ -68,7 +86,7 @@ rec:recommendation_object
       vs:term_status "unstable"@en .
 
 rec:recommended_in
-      rdf:type owl:ObjectProperty , rdf:Property ;
+      rdf:type rdf:Property , owl:ObjectProperty ;
       rdfs:comment "A thing, which is recommended in a recommendation."@en ;
       rdfs:domain owl:Thing ;
       rdfs:isDefinedBy rec: ;
@@ -78,7 +96,7 @@ rec:recommended_in
       vs:term_status "unstable"@en .
 
 rec:recommender
-      rdf:type rdf:Property , owl:ObjectProperty ;
+      rdf:type owl:ObjectProperty , rdf:Property ;
       rdfs:comment "An agent, which provided/calculated this recommendation."@en ;
       rdfs:domain rec:Recommendation ;
       rdfs:isDefinedBy rec: ;
@@ -87,7 +105,7 @@ rec:recommender
       vs:term_status "unstable"@en .
 
 rec:recommends
-      rdf:type rdf:Property , owl:ObjectProperty ;
+      rdf:type owl:ObjectProperty , rdf:Property ;
       rdfs:comment "An agent recommends a recommendation to someone or a recommendation audience."@en ;
       rdfs:domain dcterms:Agent ;
       rdfs:isDefinedBy rec: ;

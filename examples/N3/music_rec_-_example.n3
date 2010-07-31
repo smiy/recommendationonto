@@ -1,0 +1,33 @@
+# Saved by TopBraid on Sun Jun 27 23:41:15 CEST 2010
+# baseURI: http://example.org/
+
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix rec:     <http://purl.org/ontology/rec/core#> .
+@prefix mo:		<http://purl.org/ontology/mo/> .
+@prefix ex:		<http://example.org/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix event:   <http://purl.org/NET/c4dm/event.owl#> .
+@prefix time:	<http://www.w3.org/2006/time#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix isi:	<http://purl.org/ontology/is/inst/> .
+
+<http://smiy.sourceforge.net/rec/examples/N3/music_rec_-_example.n3>
+      rdf:type bibo:Document ;
+      dc:creator <http://foaf.me/zazi#me> ;
+      dc:date "2010-07-30T17:58:52+01:00"^^xsd:dateTime ;
+      dc:description """This document includes an music recommendation example based on the Recommendation Ontology."""@en ;
+      rdfs:seeAlso <http://purl.org/ontology/rec/recommendationontology.html> ;
+      dc:title "Music Recommendation Example"@en .
+      
+ex:AMusicRecommendation a rec:Recommendation :
+	rec:recommender isi:lastfm ;
+	rec:recommendation_object 
+	 
+ex:SexMachine a mo:Track ;
+	dc:title "Sex Machine"^^xsd:string ;
+	dc:creator <http://dbpedia.org/resource/James_Brown> .
+	
+ex:SexMachineTL a tl:TimeLine .
