@@ -6,17 +6,14 @@
    xmlns:foaf="http://xmlns.com/foaf/0.1/"
    xmlns:is="http://purl.org/ontology/is/core#"
    xmlns:isi="http://purl.org/ontology/is/inst/"
-   xmlns:olo="http://purl.org/ontology/olo/core#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:rec="http://purl.org/ontology/rec/core#"
    xmlns:sim="http://purl.org/ontology/similarity/"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
    xml:base="http://example.org/">
-  <rdf:Description rdf:about="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3">
-    <rec:recommendation rdf:resource="http://example.org/AMusicRecommendation"/>
-  </rdf:Description>
   <rec:RankedRecommendation rdf:about="http://example.org/AMusicRecommendation">
+    <rec:for rdf:resource="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3"/>
     <rec:recommendation_audience rdf:resource="http://example.org/FunkyPeople"/>
     <rec:recommendation_object rdf:resource="http://dbtune.org/musicbrainz/resource/track/014f2510-e653-43e9-862a-880ac6388bb1"/>
     <rec:recommendation_object rdf:resource="http://dbtune.org/musicbrainz/resource/track/0161855d-0b98-4f2d-b2ab-446dbd8d6759"/>

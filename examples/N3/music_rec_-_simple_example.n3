@@ -8,7 +8,6 @@
 @prefix ex:		<http://example.org/> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix olo:     <http://purl.org/ontology/olo/core#> .
 @prefix isi:	<http://purl.org/ontology/is/inst/> .
 @prefix sim:     <http://purl.org/ontology/similarity/> .
 @prefix is:      <http://purl.org/ontology/is/core#> .
@@ -21,12 +20,10 @@
       dc:description """This document includes a simple music recommendation example based on the Recommendation Ontology."""@en ;
       rdfs:seeAlso <http://purl.org/ontology/rec/recommendationontology.html> ;
       rdfs:seeAlso <http://ws.audioscrobbler.com/2.0/?method=track.getsimilar&artist=James+Brown&track=Get+Up+%28I+Feel+Like+Being+a%29+Sex+Machine&api_key=b25b959554ed76058ac220b7b2e0a026> ;
-      dc:title "Simple Music Recommendation Example"@en .
-      
-<http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> 
-	rec:recommendation ex:AMusicRecommendation .      
+      dc:title "Simple Music Recommendation Example"@en .   
       
 ex:AMusicRecommendation a rec:RankedRecommendation ;
+    rec:for <http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> ;
 	rec:recommender isi:lastfm ;
 	rec:recommendation_audience ex:FunkyPeople ;
 	sim:subject <http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> ;
