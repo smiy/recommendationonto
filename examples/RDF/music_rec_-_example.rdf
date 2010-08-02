@@ -12,7 +12,7 @@
    xmlns:rec="http://purl.org/ontology/rec/core#"
    xmlns:sim="http://purl.org/ontology/similarity/"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-   xml:base=""http://example.org/">
+   xml:base="http://example.org/">
   <rdf:Description rdf:about="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3">
     <rec:recommendation rdf:resource="http://example.org/AMusicRecommendation"/>
   </rdf:Description>
@@ -88,6 +88,7 @@
       </olo:Slot>
     </rec:ranked_recommendation_object>
     <rec:recommender rdf:resource="http://purl.org/ontology/is/inst/lastfm"/>
+    <sim:subject rdf:resource="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3"/>
   </rec:RankedRecommendation>
   <sim:Similarity rdf:about="http://example.org/Association01">
     <sim:method rdf:resource="http://example.org/lfmTrackSimilarity"/>
@@ -155,8 +156,9 @@
   <bibo:Document rdf:about="http://smiy.sourceforge.net/rec/examples/RDF/music_rec_-_example.rdf">
     <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
     <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-07-30T17:58:52+01:00</dc:date>
-    <dc:description xml:lang="en">This document includes an music recommendation example based on the Recommendation Ontology.</dc:description>
+    <dc:description xml:lang="en">This document includes a music recommendation example based on the Recommendation Ontology.</dc:description>
     <dc:title xml:lang="en">Music Recommendation Example</dc:title>
     <rdfs:seeAlso rdf:resource="http://purl.org/ontology/rec/recommendationontology.html"/>
+    <rdfs:seeAlso rdf:resource="http://ws.audioscrobbler.com/2.0/?method=track.getsimilar&amp;artist=James+Brown&amp;track=Get+Up+%28I+Feel+Like+Being+a%29+Sex+Machine&amp;api_key=b25b959554ed76058ac220b7b2e0a026"/>
   </bibo:Document>
 </rdf:RDF>

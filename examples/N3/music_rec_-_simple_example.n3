@@ -1,0 +1,48 @@
+# Saved by TopBraid on Sun Jun 27 23:41:15 CEST 2010
+# baseURI: http://example.org/
+
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix rec:     <http://purl.org/ontology/rec/core#> .
+@prefix ex:		<http://example.org/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix olo:     <http://purl.org/ontology/olo/core#> .
+@prefix isi:	<http://purl.org/ontology/is/inst/> .
+@prefix sim:     <http://purl.org/ontology/similarity/> .
+@prefix is:      <http://purl.org/ontology/is/core#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+
+<http://smiy.sourceforge.net/rec/examples/N3/music_rec_-_simple_example.n3>
+      rdf:type bibo:Document ;
+      dc:creator <http://foaf.me/zazi#me> ;
+      dc:date "2010-08-02T21:22:52+01:00"^^xsd:dateTime ;
+      dc:description """This document includes a simple music recommendation example based on the Recommendation Ontology."""@en ;
+      rdfs:seeAlso <http://purl.org/ontology/rec/recommendationontology.html> ;
+      rdfs:seeAlso <http://ws.audioscrobbler.com/2.0/?method=track.getsimilar&artist=James+Brown&track=Get+Up+%28I+Feel+Like+Being+a%29+Sex+Machine&api_key=b25b959554ed76058ac220b7b2e0a026> ;
+      dc:title "Simple Music Recommendation Example"@en .
+      
+<http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> 
+	rec:recommendation ex:AMusicRecommendation .      
+      
+ex:AMusicRecommendation a rec:RankedRecommendation ;
+	rec:recommender isi:lastfm ;
+	rec:recommendation_audience ex:FunkyPeople ;
+	sim:subject <http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> ;
+	rec:recommendation_object <http://dbtune.org/musicbrainz/resource/track/097c362d-72b7-4a53-96e2-d9ff02f8be1f> ;
+	rec:recommendation_object <http://dbtune.org/musicbrainz/resource/track/161d35d9-3e31-41e9-8392-cf5d2c03b31d> ;
+	rec:recommendation_object <http://dbtune.org/musicbrainz/resource/track/093c1742-ebda-45cd-a50c-734e5d92e7f2> ;
+	rec:recommendation_object <http://dbtune.org/musicbrainz/resource/track/0a208327-525a-429b-8e79-51669bfb81f7> ;
+	rec:recommendation_object <http://dbtune.org/musicbrainz/resource/track/0161855d-0b98-4f2d-b2ab-446dbd8d6759> ;
+	rec:recommendation_object <http://dbtune.org/musicbrainz/resource/track/014f2510-e653-43e9-862a-880ac6388bb1> ;
+	rec:recommendation_object <http://dbtune.org/musicbrainz/resource/track/0ab210b0-18c6-4c52-aee7-78f6012b9192> ;
+	rec:recommendation_object <http://dbtune.org/musicbrainz/resource/track/027326ef-1455-48c9-8543-ac908eb71925> ;
+	rec:recommendation_object <http://dbtune.org/musicbrainz/resource/track/04dc3d0b-dff4-41a0-8bf3-12b4b34460a6> ;
+	rec:recommendation_object <http://dbtune.org/musicbrainz/resource/track/0348eea1-8178-4dc1-8a37-d09b5897ace2> ;
+	sim:method ex:lfmTrackSimilarity .
+	
+ex:lfmTrackSimilarity a sim:AssociationMethod ;
+	is:info_service isi:lastfm .
+	
+ex:FunkyPeople a foaf:Group .

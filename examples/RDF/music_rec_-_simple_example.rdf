@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bibo="http://purl.org/ontology/bibo/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:ex="http://example.org/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:is="http://purl.org/ontology/is/core#"
+   xmlns:isi="http://purl.org/ontology/is/inst/"
+   xmlns:olo="http://purl.org/ontology/olo/core#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:rec="http://purl.org/ontology/rec/core#"
+   xmlns:sim="http://purl.org/ontology/similarity/"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xml:base="http://example.org/">
+  <rdf:Description rdf:about="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3">
+    <rec:recommendation rdf:resource="http://example.org/AMusicRecommendation"/>
+  </rdf:Description>
+  <rec:RankedRecommendation rdf:about="http://example.org/AMusicRecommendation">
+    <rec:recommendation_audience rdf:resource="http://example.org/FunkyPeople"/>
+    <rec:recommendation_object rdf:resource="http://dbtune.org/musicbrainz/resource/track/014f2510-e653-43e9-862a-880ac6388bb1"/>
+    <rec:recommendation_object rdf:resource="http://dbtune.org/musicbrainz/resource/track/0161855d-0b98-4f2d-b2ab-446dbd8d6759"/>
+    <rec:recommendation_object rdf:resource="http://dbtune.org/musicbrainz/resource/track/027326ef-1455-48c9-8543-ac908eb71925"/>
+    <rec:recommendation_object rdf:resource="http://dbtune.org/musicbrainz/resource/track/0348eea1-8178-4dc1-8a37-d09b5897ace2"/>
+    <rec:recommendation_object rdf:resource="http://dbtune.org/musicbrainz/resource/track/04dc3d0b-dff4-41a0-8bf3-12b4b34460a6"/>
+    <rec:recommendation_object rdf:resource="http://dbtune.org/musicbrainz/resource/track/093c1742-ebda-45cd-a50c-734e5d92e7f2"/>
+    <rec:recommendation_object rdf:resource="http://dbtune.org/musicbrainz/resource/track/097c362d-72b7-4a53-96e2-d9ff02f8be1f"/>
+    <rec:recommendation_object rdf:resource="http://dbtune.org/musicbrainz/resource/track/0a208327-525a-429b-8e79-51669bfb81f7"/>
+    <rec:recommendation_object rdf:resource="http://dbtune.org/musicbrainz/resource/track/0ab210b0-18c6-4c52-aee7-78f6012b9192"/>
+    <rec:recommendation_object rdf:resource="http://dbtune.org/musicbrainz/resource/track/161d35d9-3e31-41e9-8392-cf5d2c03b31d"/>
+    <rec:recommender rdf:resource="http://purl.org/ontology/is/inst/lastfm"/>
+    <sim:method rdf:resource="http://example.org/lfmTrackSimilarity"/>
+    <sim:subject rdf:resource="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3"/>
+  </rec:RankedRecommendation>
+  <foaf:Group rdf:about="http://example.org/FunkyPeople"/>
+  <sim:AssociationMethod rdf:about="http://example.org/lfmTrackSimilarity">
+    <is:info_service rdf:resource="http://purl.org/ontology/is/inst/lastfm"/>
+  </sim:AssociationMethod>
+  <bibo:Document rdf:about="http://smiy.sourceforge.net/rec/examples/RDF/music_rec_-_simple_example.rdf">
+    <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-02T21:22:52+01:00</dc:date>
+    <dc:description xml:lang="en">This document includes a simple music recommendation example based on the Recommendation Ontology.</dc:description>
+    <dc:title xml:lang="en">Simple Music Recommendation Example</dc:title>
+    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/rec/recommendationontology.html"/>
+    <rdfs:seeAlso rdf:resource="http://ws.audioscrobbler.com/2.0/?method=track.getsimilar&amp;artist=James+Brown&amp;track=Get+Up+%28I+Feel+Like+Being+a%29+Sex+Machine&amp;api_key=b25b959554ed76058ac220b7b2e0a026"/>
+  </bibo:Document>
+</rdf:RDF>

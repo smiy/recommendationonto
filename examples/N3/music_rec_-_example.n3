@@ -18,8 +18,9 @@
       rdf:type bibo:Document ;
       dc:creator <http://foaf.me/zazi#me> ;
       dc:date "2010-07-30T17:58:52+01:00"^^xsd:dateTime ;
-      dc:description """This document includes an music recommendation example based on the Recommendation Ontology."""@en ;
+      dc:description """This document includes a music recommendation example based on the Recommendation Ontology."""@en ;
       rdfs:seeAlso <http://purl.org/ontology/rec/recommendationontology.html> ;
+      rdfs:seeAlso <http://ws.audioscrobbler.com/2.0/?method=track.getsimilar&artist=James+Brown&track=Get+Up+%28I+Feel+Like+Being+a%29+Sex+Machine&api_key=b25b959554ed76058ac220b7b2e0a026> ;
       dc:title "Music Recommendation Example"@en .
       
 <http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> 
@@ -27,6 +28,7 @@
       
 ex:AMusicRecommendation a rec:RankedRecommendation ;
 	rec:recommender isi:lastfm ;
+	sim:subject <http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> ;
 	rec:ranked_recommendation_object [
 		a olo:Slot ;
 		olo:item <http://dbtune.org/musicbrainz/resource/track/097c362d-72b7-4a53-96e2-d9ff02f8be1f> ;
