@@ -1,5 +1,12 @@
 =========================
-Version 0.1 (July 2010)
+Version 0.3 (July 2010)
+=========================
+ * ADDED: rec:for - relates a recommendation to someone or something; is inverse property of rec:recommendation
+ * MODIFIED: rec:recommender - sub property of dcterms:creator
+ * MODIFIED: rec:recommended_object - sub property of sim:object
+
+=========================
+Version 0.2 (July 2010)
 =========================
  * ADDED: rec:RankedRecommendation - a ranked recommendation that includes an ordered list of recommendations
  * ADDED: rec:ranked_recommendation_object - a ranked recommendation object in a ranked recommendation
