@@ -1,4 +1,4 @@
-# Saved by TopBraid on Mon Aug 02 16:02:58 CEST 2010
+# Saved by TopBraid on Fri Aug 06 13:19:21 CEST 2010
 # baseURI: null
 
 @prefix composite:  <http://www.topbraid.org/2007/05/composite.owl#> .
@@ -11,38 +11,82 @@
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 []    rdf:type visual:Graph ;
-      rdfs:label "rec:RankedRecommendation Graph" ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <http://purl.org/ontology/rec/core#RankedRecommendation> ;
-                visual:height "75"^^xsd:int ;
-                visual:width "308"^^xsd:int ;
-                visual:x "504"^^xsd:int ;
-                visual:y "125"^^xsd:int
-              ] ;
+      rdfs:label "rec:RankedRecommendation Graph 2" ;
       visual:child
               [ rdf:type visual:Box ;
                 visual:depicts <http://purl.org/ontology/rec/core#Recommendation> ;
-                visual:height "75"^^xsd:int ;
-                visual:width "300"^^xsd:int ;
-                visual:x "349"^^xsd:int ;
-                visual:y "10"^^xsd:int
+                visual:height "20"^^xsd:int ;
+                visual:width "201"^^xsd:int ;
+                visual:x "655"^^xsd:int ;
+                visual:y "185"^^xsd:int
               ] ;
       visual:child
               [ rdf:type visual:Box ;
-                visual:depicts <http://purl.org/ontology/olo/core#slot> ;
-                visual:height "75"^^xsd:int ;
-                visual:width "282"^^xsd:int ;
-                visual:x "853"^^xsd:int ;
-                visual:y "123"^^xsd:int
+                visual:depicts <http://purl.org/ontology/olo/core#Slot> ;
+                visual:height "20"^^xsd:int ;
+                visual:width "112"^^xsd:int ;
+                visual:x "324"^^xsd:int ;
+                visual:y "367"^^xsd:int
               ] ;
       visual:child
               [ rdf:type visual:Box ;
                 visual:depicts <http://purl.org/ontology/rec/core#recommendation_object> ;
+                visual:height "20"^^xsd:int ;
+                visual:width "245"^^xsd:int ;
+                visual:x "801"^^xsd:int ;
+                visual:y "267"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://purl.org/ontology/olo/core#item> ;
+                visual:height "20"^^xsd:int ;
+                visual:width "117"^^xsd:int ;
+                visual:x "321"^^xsd:int ;
+                visual:y "451"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://purl.org/ontology/olo/core#OrderedList> ;
+                visual:height "20"^^xsd:int ;
+                visual:width "162"^^xsd:int ;
+                visual:x "425"^^xsd:int ;
+                visual:y "186"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://purl.org/ontology/olo/core#slot> ;
+                visual:height "20"^^xsd:int ;
+                visual:width "111"^^xsd:int ;
+                visual:x "325"^^xsd:int ;
+                visual:y "269"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://purl.org/ontology/rec/core#RankedRecommendation> ;
+                visual:height "20"^^xsd:int ;
+                visual:width "250"^^xsd:int ;
+                visual:x "485"^^xsd:int ;
+                visual:y "268"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://purl.org/ontology/rec/core#ranked_recommendation_object> ;
+                visual:height "20"^^xsd:int ;
+                visual:width "297"^^xsd:int ;
+                visual:x "461"^^xsd:int ;
+                visual:y "368"^^xsd:int
+              ] ;
+      visual:depicts <http://purl.org/ontology/rec/core#RankedRecommendation> .
+
+[]    rdf:type visual:Graph ;
+      rdfs:label "rec:RankedRecommendation Graph" ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://purl.org/ontology/olo/core#item> ;
                 visual:height "75"^^xsd:int ;
-                visual:width "303"^^xsd:int ;
-                visual:x "169"^^xsd:int ;
-                visual:y "125"^^xsd:int
+                visual:width "279"^^xsd:int ;
+                visual:x "852"^^xsd:int ;
+                visual:y "380"^^xsd:int
               ] ;
       visual:child
               [ rdf:type visual:Box ;
@@ -54,11 +98,35 @@
               ] ;
       visual:child
               [ rdf:type visual:Box ;
-                visual:depicts <http://purl.org/ontology/olo/core#OrderedList> ;
+                visual:depicts <http://purl.org/ontology/olo/core#slot> ;
                 visual:height "75"^^xsd:int ;
                 visual:width "282"^^xsd:int ;
-                visual:x "688"^^xsd:int ;
+                visual:x "853"^^xsd:int ;
+                visual:y "123"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://purl.org/ontology/rec/core#Recommendation> ;
+                visual:height "75"^^xsd:int ;
+                visual:width "300"^^xsd:int ;
+                visual:x "349"^^xsd:int ;
                 visual:y "10"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://purl.org/ontology/rec/core#RankedRecommendation> ;
+                visual:height "75"^^xsd:int ;
+                visual:width "308"^^xsd:int ;
+                visual:x "504"^^xsd:int ;
+                visual:y "125"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://purl.org/ontology/rec/core#recommendation_object> ;
+                visual:height "75"^^xsd:int ;
+                visual:width "303"^^xsd:int ;
+                visual:x "169"^^xsd:int ;
+                visual:y "125"^^xsd:int
               ] ;
       visual:child
               [ rdf:type visual:Box ;
@@ -70,10 +138,10 @@
               ] ;
       visual:child
               [ rdf:type visual:Box ;
-                visual:depicts <http://purl.org/ontology/olo/core#item> ;
+                visual:depicts <http://purl.org/ontology/olo/core#OrderedList> ;
                 visual:height "75"^^xsd:int ;
-                visual:width "279"^^xsd:int ;
-                visual:x "852"^^xsd:int ;
-                visual:y "380"^^xsd:int
+                visual:width "282"^^xsd:int ;
+                visual:x "688"^^xsd:int ;
+                visual:y "10"^^xsd:int
               ] ;
       visual:depicts <http://purl.org/ontology/rec/core#RankedRecommendation> .
