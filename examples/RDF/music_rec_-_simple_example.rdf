@@ -12,7 +12,7 @@
    xmlns:sim="http://purl.org/ontology/similarity/"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
    xml:base="http://example.org/">
-  <rec:RankedRecommendation rdf:about="http://example.org/AMusicRecommendation">
+  <rec:Recommendation rdf:about="http://example.org/AMusicRecommendation">
     <rec:for rdf:resource="http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3"/>
     <rec:recommendation_audience rdf:resource="http://example.org/FunkyPeople"/>
     <rec:recommendation_object rdf:resource="http://dbtune.org/musicbrainz/resource/track/014f2510-e653-43e9-862a-880ac6388bb1"/>

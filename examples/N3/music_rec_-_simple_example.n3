@@ -22,7 +22,7 @@
       rdfs:seeAlso <http://ws.audioscrobbler.com/2.0/?method=track.getsimilar&artist=James+Brown&track=Get+Up+%28I+Feel+Like+Being+a%29+Sex+Machine&api_key=b25b959554ed76058ac220b7b2e0a026> ;
       dc:title "Simple Music Recommendation Example"@en .   
       
-ex:AMusicRecommendation a rec:RankedRecommendation ;
+ex:AMusicRecommendation a rec:Recommendation ;
     rec:for <http://dbtune.org/musicbrainz/resource/track/008e72df-6469-4557-8b5b-c54c3285fbd3> ;
 	rec:recommender isi:lastfm ;
 	rec:recommendation_audience ex:FunkyPeople ;
